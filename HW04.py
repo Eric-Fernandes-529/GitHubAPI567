@@ -8,5 +8,3 @@ def GetRepos(id):
         commits = requests.get("https://api.github.com/repos/"+id+"/"+x["name"]+"/commits").json()
         result+="Repo: "+x["name"]+" Number of commits: "+str(len(commits))+"\n"
     return result
-
-print(GetRepos("Eric-Fernandes-529"))
