@@ -5,4 +5,4 @@ install:
   - pip install requests
 # command to run tests
 script:
- - python -c 'from HW04 import GetRepos; GetRepos("Eric-Fernandes-529")'
+ - python -m unittest HW04Test.py
